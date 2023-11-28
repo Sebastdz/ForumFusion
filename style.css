@@ -1,0 +1,1593 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    font-family: "Motiva Sans";
+    background: linear-gradient(51deg, #20c2df 3%, #012863 100%);
+    scroll-behavior: smooth;
+    transition: padding-top 0.5s ease;
+     margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background: #212523; */
+  }
+
+  @media  only screen and (max-width: 915px) {
+    #headertitletext {
+      font-size: 24px;
+      margin-top: 1%;
+      margin-left: 9%;
+    }
+
+    button.login {
+      right:5%;
+      position: absolute;
+      height: 45%;
+    }
+
+    .SignOutText {
+      display: none;
+    }
+
+    .pagebuttons {
+      bottom: 10px;
+     }
+
+     
+
+    @media  only screen and (max-width: 500px) {
+  
+      #headertitletext {
+        font-size: 22px;
+        margin-top: 2%;
+        margin-left: 11%;
+      }
+
+      p.post-user {
+        font-size: 2.7vw;
+      }
+
+      h2 {
+        font-size: 4.2vw;
+      }
+  
+      p {
+        font-size: 3vw;
+      }
+
+      .pagebuttons {
+        bottom: 10px;
+       }
+
+       p.post-date
+       {
+        font-size: 2vw;
+       }
+
+       .notfound {
+        padding: 35% !important;
+       }
+
+       .notfound p {
+        font-size: 30px !important;
+        text-align: center;
+      }
+    
+      p.notfounddesc {
+        font-size: 12px !important;
+      }
+
+      /* button.logged-postcomment {
+        padding: 1.5% !important;
+      }
+
+      button.logged-postcomment2 {
+        padding: 1.5% !important;
+      } */
+
+                
+      #contentpremium {
+        margin-top: 16%;
+        margin-bottom: 1%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 30px;
+        /* border: 5px dashed red;  */
+        text-align: center;
+        background: rgb(128, 104, 39);
+        border-radius: 10px 10px 10px 10px;
+        justify-content: center;
+        /* border: dashed 2px red;     */
+      } 
+
+
+      #contentpremium h1 {
+        text-align: center;
+        font-size: 24px !important;
+        margin-left: -1%;
+        margin-bottom: 1%;
+      }
+      
+      #contentpremium p {
+        text-align: center;
+        font-size: 14px !important;
+        margin-left: -1%;
+        margin-bottom: 5% !important;
+        color: white;
+      }
+      
+      #contentpremium input {
+        width: 100% !important;
+        border: 1px solid #d0d0d0;
+        padding: 8px;
+        margin-bottom: 10px;
+        position: relative;
+        display:inline;
+      }
+
+      #premiumsubmit{
+        background: goldenrod;
+        color: white;
+        border: 2px solid black;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 1%;
+        width: 20% !important;
+        transition: 0.5s;
+        text-align: center;
+        margin-top: 5px;
+        border-radius: 10px;
+        position: relative;
+        min-width: 25px;
+        min-height: 25px;
+      }
+
+      .error-messagepremium {
+        color: goldenrod; 
+        font-size: 11px !important;
+        margin-top: 10px;
+        text-align: center;
+      }
+      
+      .menu-dropdown {
+        position: absolute;
+        display: inline-block;
+        margin-top: 0.5em !important;
+        margin-left: 0.8% !important;
+        margin-right: auto !important;
+      }
+      
+      .menu-dropdown-button {
+        background-color: #0369a1;
+        color: white;
+        padding: 8.5px 8.5px !important;
+        border: none;
+        border-radius: 10px 10px 10px 10px;
+        cursor: pointer;
+      }
+
+      /* //////////////////////////// MODAL FOR PHONES ///////////////////////////// */
+
+  .modal-box,
+  .modal-boxR,
+  .submit-postcomment {
+    top: 10%;
+    bottom: 50%;
+   max-width: 250px;
+   position: absolute;
+  }
+
+  #LoginText,
+  #loginTextR {
+    font-size: 30px;
+   margin-left: -40px;
+   margin-right: 0;
+   margin-top: 0;
+   margin-bottom: 20px;
+  }
+
+  button.login {
+    right:5%;
+    position: absolute;
+    height: 45%;
+  }
+    
+    /* ///////////////////// END OF MODAL FOR PHONES */
+
+      /* button.buypremium{
+        color: rgb(0, 0, 0);
+        border: none;
+        position: absolute;
+        width: 100%;
+        height: 52%;
+        padding-top: 1%;
+        padding-bottom: 0%;
+        transition: 0s;
+        float: left;
+      } */
+    }
+
+    button.login{
+      /* font-size: 12px; */
+      padding: 10px 20px;
+      margin-top: 1%;
+    }
+
+    button.register{
+      font-size: 12px;
+      display: none;
+    }
+    .button-text {
+      display: none;
+  }
+ .fa-right-to-bracket{
+    font-size: 11px;
+  }
+
+  .scrollheader .header_title{
+    height: 60%;
+  }
+
+  .hidenamephone {
+    display: none;
+  }
+
+  .user-info {
+    text-align: center;
+  }
+
+  .session-name .name-text{
+    display: none;
+  }
+  
+/* 
+   button.buypremium {
+    margin-top: 5.5%;
+  } 
+   */
+
+   .session-name .rank_admin {
+    margin-left: 0em; 
+  }
+
+  .session-name .rank_moderator {
+    margin-left: 0em; 
+  }
+
+  .session-name .rank_premium {
+    margin-left: 0em; 
+  }
+
+  .session-name .rank_user {
+    margin-left: 0em; 
+  }
+
+  .session-name {
+    padding-right: 0.49em;
+  }
+}
+
+@media  only screen and (max-width: 1110px) {
+  .button-text2 {
+    display:none;
+  }
+
+  button.buypremium {
+   height: 51.2%;
+  }
+  
+}
+
+   header {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    top:0;
+    height: 80px;
+    transition: transform 0.5s ease, padding 0.5s ease, width 0.5s ease, margin 0.5s ease;
+    position: sticky;
+    z-index: 1000;
+  } 
+
+  .sticky{
+    position: sticky;
+    top:0;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .scrollheader .header_title{
+    padding: 0.4%;
+    border-radius: 0 0 0 0;
+  }
+
+.header_title {
+    background-color: rgb(17, 18, 71);
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 0 0 20px 20px;
+    transition: all 0.5s ease;
+}
+
+
+button.login{
+  background: rgb(69, 143, 204);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin-left: 10px;
+  margin-right: 1%;
+  width: 10%;
+  transition: 0.5s;
+  float:right;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+button.login:hover{
+  background: rgb(57, 117, 156);
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  padding: 10px 5px;
+  width: 10%;
+  transition: 0.5s;
+  float:right;
+  text-align: center;
+  margin-top: 5px;
+}
+
+button.register{
+  background: rgb(2, 97, 175);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 5px;
+  width: 10%;
+  transition: 0.5s;
+  float:right;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+button.register:hover{
+  background: rgb(4, 79, 129);
+  border: none;
+  cursor: pointer;
+  padding: 10px 5px;
+  width: 10%;
+  transition: 0.5s;
+  float:right;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+}
+
+button.buypremium{
+  background: rgb(255, 208, 0);
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer; 
+  padding: 12.5px 0;
+  width: 10%;
+  transition: 0.5s;
+  float:right;
+  margin-top: 0.2em;
+  margin-right: 2px;
+  border-radius: 10px;
+}
+button.buypremium:hover{
+  background: rgba(255, 208, 0, 0.705);
+  border: none;
+  cursor: pointer;
+  padding: 12.5px;
+  width: 10%;
+  transition: 0.5s;
+  float:right;
+  color: rgb(255, 255, 255);
+  margin-top: 0.2em;
+}
+
+.header-buttons {
+  float: right;
+  right: 0;
+  padding-left: 10%;
+}
+
+.header-buttons button {
+  position: absolute;
+  margin-left: -11.5%;
+}
+
+.header_title p {
+  float: right;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  z-index: 1;
+}
+
+span.rank_user {
+  color: white;
+  background: #0369a1;
+  border-radius: 5px;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  z-index: 1;
+}
+
+span.rank_premium {
+  color: white;
+  background: goldenrod;
+  border-radius: 5px;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+span.rank_moderator {
+  color: white;
+  background: rgb(52, 185, 0);
+  border-radius: 5px;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+span.rank_admin {
+  color: white;
+  background: rgb(185, 12, 0);
+  border-radius: 5px;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+span.rank_banned {
+  color: white;
+  background: rgb(48, 47, 47);
+  border-radius: 5px;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+
+
+/*///////////////////////////////////////////////// DROPDOWN START ////////////////////////////////////////*/
+
+.menu-dropdown {
+  position: absolute;
+  display: inline-block;
+  margin-top: 0.2em;
+  margin-left: 18px;
+  z-index: 1;
+}
+
+.menu-dropdown-button {
+  background-color: #0369a1;
+  color: white;
+  padding: 12.5px;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border: 2px solid black;
+  z-index: 1;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.menu-dropdown-content button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-dropdown-content button:hover {
+  background-color: #ddd;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.show {
+  display: block;
+}
+
+
+.user-dropdown {
+  float:right;
+  position: relative;
+}
+
+
+.userdropdownname {
+  cursor: pointer;
+  color: white;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.user-info-bg {
+  position: absolute;
+  width: 100%;
+  top:5%;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  height: 100%;
+  z-index: 1;
+  background: rgb(58, 61, 221); /* Set the background color to match the dropdown */
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: crimson;
+  margin-top: 43px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 0;
+  width: 100%;
+  border-radius: 5px 5px 10px 10px;
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+
+.dropdown-content:hover {
+  transition: 0.5s;
+  background-color: rgb(184, 5, 5);
+}
+
+.user-dropdown.active .dropdown-content {
+  display: block;
+  animation: slideDown 0.2s forwards;
+}
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%); /* Start position */
+  }
+  to {
+    transform: translateY(0); /* End position */
+  }
+}
+
+.dropdown-content li {
+  padding: 5px;
+  list-style: none;
+}
+
+.dropdown-content li a, .dropdown-content li button {
+  color: white;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  right: 11%;
+  left: 11%;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 1px 1px 1px 1px;
+}
+
+.dropdown-content li button {
+  text-align: center;
+}
+
+.dropdown-content li a:hover, .dropdown-content li button:hover {
+  background-color: none;
+}
+
+.session-name .rank_admin {
+  margin-left: 0.3em; 
+}
+
+.session-name .rank_moderator {
+  margin-left: 0.3em; 
+}
+
+.session-name .rank_premium {
+  margin-left: 0.3em; 
+}
+
+.session-name .rank_user {
+  margin-left: 0.3em; 
+}
+
+.submit-postcomment-cont {
+  position: fixed;
+  padding-top: 10%;
+  /* padding-bottom: 10%; */
+  /* padding-left: auto;
+  padding-right: auto;  */
+  /* padding: 0 auto; */
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.47);
+  top: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 2;
+  display: none;
+}
+
+
+.submit-postcomment {
+  display: block;
+  position: absolute;
+  /* border: 5px dashed red; */
+  border-radius: 10px 10px 10px 10px;
+  z-index: 2;
+  padding: 10%;
+  width: 500px;
+  margin: 40px auto;
+  background-color: white;
+  position: relative;
+  text-align: left;
+  padding: 30px;
+  top: 10%;
+}
+
+.submit-postcomment .close2,.close3 {
+  position: absolute;
+  right: 16px;
+  top: 5px;
+  font-size: 25px;
+  font-weight: bolder;  
+  cursor: pointer
+}
+
+h1.h1-postcomment{
+  color: black;
+  text-align: left;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+h1.h1-postcomment:hover{
+  color: black;
+  text-align: left;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  cursor:auto;
+}
+
+.submit-postcomment button.submit{
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  width: 100%;
+  transition: 0.5s;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* .submit-postcomment input{
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 10px 10px;
+} */
+
+.submit-postcomment button.submit:hover{
+  background: #39833b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  width: 100%;
+  transition: 0.5s;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.submit-postcomment input[type=text]{
+  width: 100%;
+  border: 1px solid #d0d0d0;
+  display: block;
+  padding: 8px 8px 8px 8px;
+  margin: 0;
+  margin-bottom: 10px;
+  max-width: 100%; 
+}
+
+
+ button.logged-postcomment{
+  background:#06445a;
+   color: white;
+   padding: 10px 5px;
+  /* border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 1%;
+  width: 8%;
+  transition: 0.5s;
+  float:left;
+  text-align: center;
+  margin-top: 1%;
+  border-radius: 10px; */ 
+  border-radius: 0px 0px 10px 10px;
+}
+
+button.logged-postcomment:hover{
+  background: #07526d;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 0px 0px 10px 10px;
+/* border: none;
+  cursor: pointer;
+  border-radius: 0px 0px 10px 10px;
+  width: 8%;
+  transition: 0.5s;
+  float:left;
+  text-align: center;
+  margin-top: 1%; */
+} 
+
+button.logged-postcomment2{
+  background:#06445a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin-left: 10px;
+  margin-right: 1%;
+  width: 8%;
+  transition: 0.5s;
+  float:left;
+  text-align: center;
+  margin-top: 1%;
+  border-radius: 10px;
+}
+
+button.logged-postcomment2:hover{
+  background: #07526d;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  padding: 10px 5px;
+  width: 8%;
+  transition: 0.5s;
+  float:left;
+  text-align: center;
+  margin-top: 1%;
+}
+
+button.deletebutton {
+  position: relative;
+  padding: 10px 10px;
+  margin-left: 11px;
+  color: white;
+  background: darkred;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  transition: 0.3s;
+   cursor: pointer;
+}
+
+button.deletebutton:hover{
+  background: rgb(172, 18, 18);
+  transition: 0.3s;
+}
+
+button.deletebuttoncomment {
+  position: relative;
+  padding: 10px 10px;
+  margin-left: 11px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background: darkred;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  transition: 0.3s;
+   cursor: pointer;
+}
+
+button.deletebuttoncomment:hover{
+  background: rgb(172, 18, 18);
+  transition: 0.3s;
+}
+
+input.deletebuttonadm {
+  position: relative;
+  display:inline;
+  margin: 2px;
+  padding: 3px 3px;
+  color: white;
+  background: darkred;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  transition: 0.3s;
+   cursor: pointer;
+}
+
+input.deletebuttonadm:hover{
+  background: rgb(172, 18, 18);
+  transition: 0.3s;
+}
+
+input.deletebuttonadmrank {
+  position: relative;
+  display:inline;
+  margin: 2px;
+  padding: 3px 3px;
+  color: white;
+  background: rgb(179, 100, 5);
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  transition: 0.3s;
+   cursor: pointer;
+}
+
+input.deletebuttonadmrank:hover{
+  background:rgb(187, 123, 4);
+  transition: 0.3s;
+}
+
+input.deletebuttonadmub {
+  position: relative;
+  display:inline;
+  margin: 2px;
+  padding: 3px 3px;
+  color: white;
+  background: rgb(31, 31, 31);
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  transition: 0.3s;
+   cursor: pointer;
+}
+
+input.deletebuttonadmub:hover{
+  background:rgb(65, 65, 65);
+  transition: 0.3s;
+}
+
+button.admin-userpanel {
+  background:darkred;
+  color: white;
+  padding: 10px 5px;
+ border-radius: 0px 0px 0px 0px;
+ border-bottom: 1px solid black;
+  display: none;
+}
+
+button.admin-userpanel:hover {
+  background: rgb(172, 18, 18);
+  color: white;
+  padding: 10px 5px;
+ border-radius: 0px 0px 0px 0px;
+}
+
+button.admin-announcementpanel {
+  background:darkred;
+  color: white;
+  padding: 10px 5px;
+ border-radius: 0px 0px 5px 5px;
+  display: none;
+}
+
+button.admin-announcementpanel:hover {
+  background: rgb(172, 18, 18);
+  color: white;
+  padding: 10px 5px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////// DROPDOWN END////////////////////////////////////////*/
+
+
+/* END OF HEADER */
+
+
+
+.content {
+  margin-top: 4%;
+  margin-bottom: 1%;
+  margin-left: 0;
+  margin-right: 0;
+  /* border: dashed 2px red;     */
+} 
+
+#contentpremium {
+  margin-top: 12%;
+  margin-bottom: 1%;
+  margin-left: 20%;
+  padding: 30px 20px;
+  margin-right: 20%;
+  /* border: 5px dashed red; */
+  text-align: center;
+  background: rgb(128, 104, 39);
+  border-radius: 10px 10px 10px 10px;
+  justify-content: center;
+  /* border: dashed 2px red;     */
+} 
+
+#contentpremium h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-left: -1%;
+  margin-bottom: 1%;
+}
+
+#contentpremium p {
+  text-align: center;
+  font-size: 24px;
+  margin-left: -1%;
+  margin-bottom: 3%;
+  color: white;
+}
+
+#contentpremium input {
+  width: 20%;
+  border: 1px solid #d0d0d0;
+  padding: 8px;
+  margin-bottom: 10px;
+  position: relative;
+  display:inline;
+}
+
+#premiumsubmit{
+  background: goldenrod;
+  color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin-left: 10px;
+  margin-right: 1%;
+  width: 10%;
+  transition: 0.5s;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 10px;
+  position: relative;
+  min-width: 25px;
+  min-height: 25px;
+}
+
+#premiumsubmit:hover{
+  background: gold;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 10px 5px;
+  width: 10%;
+  transition: 0.5s;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+  .comment_area{
+    background: transparent;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: auto;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+  }
+  .comment, .reply{
+    margin-top: 5px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #212523;
+  }
+
+  .comments-container {
+    padding: 20px;
+    /* border: dashed 5px red; */
+  }
+
+  .forumpost {
+    margin-top: 0;
+    background-color: white;
+    padding: 20px;
+    border: solid 3px rgb(0, 0, 0);
+    position: relative;
+    margin: 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .forumpost:hover{
+    background-color: #f3f3f3;
+    cursor: pointer;
+  }
+
+  .forumpost-full {
+    margin-top: 0;
+    background-color: white;
+    padding: 20px;
+    border: solid 3px rgb(0, 0, 0);
+    position: relative;
+    margin: 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    /* Add any additional styling for the full-screen view */
+}
+
+  .post-user {
+    margin-top: -10px;
+    font-size: 17px;
+  }
+
+  .post-date {
+    font-size: 10px;
+  }
+
+  .post-rank {
+    color: white;
+    background: #0369a1;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    z-index: 1;
+  }
+
+  .notfound
+  {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    background:transparent;
+    text-align: center;
+    padding: 60px;
+     /* border: dashed 5px red;  */
+  }
+
+  .notfound p {
+    font-size: 40px;
+  }
+
+  p.notfounddesc {
+    font-size: 24px;
+  }
+  
+  /* .reply{
+    border: 1px solid #ccc;
+  }
+  p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  form{
+    margin: 10px;
+  }
+  form h3{
+    margin-bottom: 5px;
+  }
+  form input, form textarea{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  form button.submit{
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    transition: 0.5s;
+    margin-bottom: 20px;
+  }
+  form button.submit:hover{
+    background: #39833b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  button.reply{
+    background: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 20%;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+
+  button.reply:hover{
+    background: rgb(196, 128, 3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 20%;
+    transition: 0.5s;
+  } */
+
+ 
+
+
+  h1 {
+    display: inline-block;
+    margin-left: 5%;
+    color: white;
+  }
+
+  h1:hover {
+    display: inline-block;
+    margin-left: 5%;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+.pagebuttons {
+ /* border: 2px dashed orange; */
+ text-align: center;
+ position: relative;
+ margin-top: 4%;
+ margin-bottom: 1%;
+}
+
+.pagebuttons a {
+  color: #ccc;
+  background: #012863;
+  border-radius: 10px 10px 10px 10px;
+  margin: 5px;
+  padding: 10px;
+  text-decoration:none;
+}
+
+
+
+
+
+
+/* for login form */
+
+.modal-cont {
+    position: fixed;
+    padding-top: 10%;
+    /* padding-bottom: 10%; */
+    /* padding-left: auto;
+    padding-right: auto;  */
+    /* padding: 0 auto; */
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.47);
+    top: 0;
+    left: 0;
+    overflow: auto;
+   
+    
+}
+
+.modal-box{
+    width: 500px;
+    margin: 40px auto;
+    background-color: white;
+    position: relative;
+    text-align: left;
+    padding: 30px;
+}
+
+.modal-box .close {
+    position: absolute;
+    right: 16px;
+    top: 5px;
+    font-size: 25px;
+    font-weight: bolder;  
+    cursor: pointer
+}
+/* .modal-box .close:hover, .modal-box .close:focus{
+    color: #c6c6c6
+} */
+.modal-box img{
+    width: 30%;
+    border-radius: 50%;
+    display: block;
+    margin:auto;
+    padding: 14px;
+    margin-bottom: 30px;
+    min-width: 150px;
+    max-width: 230px
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    display: block;
+    padding: 8px;
+    margin: 5px 0;
+    margin-bottom: 10px;
+    
+}
+.modal-box .login-button {
+    padding: 10px;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    color: white;
+    border-radius: 20px;
+    background-color: #29a6d4;
+    margin: 16px 0;
+    
+}
+input[type = checkbox] {
+    margin-right: 2px;
+    vertical-align: baseline; /*no effect for baseline*/
+}
+
+
+.close-forgot{
+    background-color: none;
+}
+
+.modal-box label, .modal-box .login-button, .modal-box input{
+    width: 95%;
+    display: block;
+    margin: 0px auto;
+    
+}
+
+.modal-box .login-button
+{
+  border: none;
+  width: 50%;
+}
+
+.modal-box .login-button{
+    margin-top: 16px;
+    cursor: pointer
+}
+input[type=checkbox]{
+    display: inline-block;
+    width: auto;
+    margin-left: 16px
+}
+/* .modal-box .close-forgot {
+    background-color: #d8d8d8;
+    width: 95%;
+    padding: 20px;
+    
+}
+.modal-box .cancel{
+    background-color: #c44f4f;
+    padding: 10px 15px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer
+} */
+.modal-box span{
+    float: right
+}
+.modal-box a{
+    color: #1483be;
+    font-weight: 500;
+    text-decoration: underline
+}
+
+
+.modal-cont{display: none}
+.modal-box {
+    animation-name: zoom;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    border: 1px solid #b7b7b7;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px rgba(35, 120, 204, 0.8)
+    
+}
+@keyframes zoom {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+@keyframes zoomout {
+  from{transform: scale(1);}
+  to{transform: scale(0);}
+}
+
+#LoginText {
+  color: black;
+  cursor: default;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: auto;
+}
+
+
+/* REGISTER ONLY */
+
+
+
+.modal-contR {
+  position: fixed;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: auto;
+  padding-right: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.47);
+  top: 0;
+  left: 0;
+   overflow: auto
+ 
+  
+}
+
+.modal-boxR{
+  width: 500px;
+  margin: 40px auto;
+  background-color: white;
+  position: relative;
+  text-align: left;
+  padding: 30px;
+}
+
+.modal-boxR .closeR {
+  position: absolute;
+  right: 16px;
+  top: 5px;
+  font-size: 25px;
+  font-weight: bolder;  
+  cursor: pointer
+}
+/* .modal-box .close:hover, .modal-box .close:focus{
+  color: #c6c6c6
+} */
+.modal-boxR img{
+  width: 30%;
+  border-radius: 50%;
+  display: block;
+  margin:auto;
+  padding: 14px;
+  margin-bottom: 30px;
+  min-width: 150px;
+  max-width: 230px
+}
+input[type=text], input[type=password]{
+  width: 100%;
+  border: 1px solid #d0d0d0;
+  border-radius: 10px;
+  display: block;
+  padding: 8px;
+  margin: 5px 0;
+  margin-bottom: 10px;
+  
+}
+.modal-boxR .login-buttonR {
+  padding: 10px;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: #29a6d4;
+  margin: 16px 0;
+  
+}
+input[type = checkbox] {
+  margin-right: 2px;
+  vertical-align: baseline; 
+}
+
+
+.close-forgotR{
+  background-color: none;
+}
+
+.modal-boxR label, .modal-boxR .login-buttonR, .modal-boxR input{
+  width: 95%;
+  display: block;
+  margin: 10px auto
+  
+}
+
+.modal-boxR .login-buttonR
+{
+  border: none;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.modal-boxR .login-buttonR{
+  margin-top: 16px;
+  cursor: pointer
+}
+
+
+input[type=checkbox]{
+  display: inline-block;
+  width: auto;
+  margin-left: 16px
+}
+
+.modal-boxR span{
+  float: right
+}
+.modal-boxR a{
+  color: #1483be;
+  font-weight: 500;
+  text-decoration: underline
+}
+
+
+.modal-contR{display: none}
+.modal-boxR {
+  animation-name: zoom2;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  border: 1px solid #b7b7b7;
+  border-radius: 20px;
+  box-shadow: 1px 1px 8px rgba(35, 120, 204, 0.8)
+  
+}
+@keyframes zoom2 {
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+@keyframes zoomout {
+from{transform: scale(1);}
+to{transform: scale(0);}
+}
+
+#LoginTextR {
+color: black;
+cursor: default;
+text-align: center;
+padding-left: 20%;
+padding-right: auto;
+}
+
+
+
+
+.error-message {
+  color: red; 
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.error-messagepremium {
+  color: goldenrod; 
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/* ADMIN */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table th, td {
+  border: 2px solid #000000;
+  padding: 4px;
+  color: white;
+  text-align: left;
+  background-color:#012863;
+}
+
+/* END OF ADMIN */
+
+
+
+  @font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://community.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Regular.ttf?v=4.015') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://community.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Light.ttf?v=4.015') format('truetype');
+	font-weight: 300; /* Light */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://community.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Thin.ttf?v=4.015') format('truetype');
+	font-weight: 200; /* Ultra-Light / Thin */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://community.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Medium.ttf?v=4.015') format('truetype');
+	font-weight: 500; /* Medium */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://community.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Bold.ttf?v=4.015') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://community.akamai.steamstatic.com/public/shared/fonts/MotivaSans-RegularItalic.ttf?v=4.015') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://community.akamai.steamstatic.com/public/shared/fonts/MotivaSans-LightItalic.ttf?v=4.015') format('truetype');
+	font-weight: 300; /* Light */
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://community.akamai.steamstatic.com/public/shared/fonts/MotivaSans-BoldItalic.ttf?v=4.015') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Motiva Sans';
+	src: url('https://community.akamai.steamstatic.com/public/shared/fonts/MotivaSans-Black.ttf?v=4.015') format('truetype');
+	font-weight: 900; /* Black */
+	font-style: normal;
+}
+
+
