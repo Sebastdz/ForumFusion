@@ -21,9 +21,6 @@ https://github.com/user-attachments/assets/e31d4e8b-46e2-4bf3-a148-fa1a1d5fa9d9
 ### Banned user
 https://github.com/user-attachments/assets/a3d98844-dd1b-4f26-8c8b-a30d067f9cbe
 
-### Admin view
-![Screenshot_4837](https://github.com/user-attachments/assets/779eb190-d56f-4796-a9c0-bdd1b4699fdb)
-
 ### Admin menu
 ![Screenshot_4838](https://github.com/user-attachments/assets/eddd27de-088e-4997-9da1-bde194805c43)
 
